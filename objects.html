@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Creation</title>
+</head>
+<body>
+    <p id="demo"></p>
+     <script>
+         //This function wil create a object and display the value 
+         function createPerson() 
+         {
+                var person = {
+                                        name:"chaya",
+                                        designation:"Jr.Software Developer",
+                                        phone:8524796310
+                            };
+                document.getElementById("demo").innerHTML="Name is :" +person.name +"<br>Designation is : " +person.designation +"<br>Phone Number is : " +person.phone;    
+                            
+        }
+       createPerson(); 
+      
+    </script>
+    
+</body>
+</html>
