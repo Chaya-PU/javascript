@@ -1,4 +1,4 @@
-//These functions shows how to use branching statements
+/* //These functions shows how to use branching statements
 
 //This function will check for given number even number or not
 function toDisplayEvenNumber()
@@ -42,39 +42,37 @@ function testPrimeOrNot(n)
 }
 document.write(testPrimeOrNot(37));
 
-//This function will display the dayname 
-function toCheckGivenDay()
+//This function will display the dayname  */
+function toCheckGivenDay(days)
 {
-    document.write("<h3>3. Using switch statement</h3>");
-    let day = 3;
-    let dayName;
-
-    switch (day)
+    switch (days)
     {
         case 1:
-            dayName = 'Sunday';
-            break;
+            return 'Sunday';
+            
         case 2:
-            dayName = 'Monday';
-            break;
+            return 'Monday';
+            
         case 3:
-            dayName = 'Tuesday';
-            break;
+            return 'Tuesday';
+            
         case 4:
-            dayName = 'Wednesday';
-            break;
+            return 'Wednesday';
+            
         case 5:
-            dayName = 'Thursday';
-            break;
+            return 'Thursday';
+            
         case 6:
-            dayName = 'Friday';
-            break;
+            return 'Friday';
+            
         case 7:
-            dayName = 'Saturday';
-            break;
+            return 'Saturday';
+            
         default:
-            dayName = 'Invalid day';
+            return 'Invalid day';
     }
-    document.write(dayName);
+    
 }
-toCheckGivenDay();
+const day = toCheckGivenDay(3);
+console.log(day);
+module.exports = toCheckGivenDay;
